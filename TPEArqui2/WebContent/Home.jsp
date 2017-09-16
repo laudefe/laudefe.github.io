@@ -64,8 +64,12 @@
 			<div class="col-md-4">
 				<div class="row">
 					<div class="col" style="min-width: 200px;">
-						<h3 style="margin-left: 100px">Ciclos por Instrucción</h3>
 						<br>
+						<br>
+						<br>
+						<h3 style="margin-left: 100px">Latencia <span class="glyphicon glyphicon-time"></span></h3>
+						<p>	</p>
+						
 					</div>
 				</div>
 				<div class="row">
@@ -205,7 +209,7 @@
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h3>Referencias <span class="glyphicon glyphicon-info-sign"></span></h3>
+						<h4><strong>REFERENCIAS </strong><span class="glyphicon glyphicon-info-sign"></span></h4>
 					</div>
 					<div class="modal-body">
 						<pre class="alert alert-info">
@@ -244,12 +248,13 @@ for (i=1; i<= 5 ; i++) {		while ( i<= 5){
 		<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
 			<div class="modal-dialog modal-lg"
 				style="width: 1250px; height: 800px" role="document">
-				<div class="modal-content">
+				<div class="modal-content ">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal"
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
+						<h4 style="color: #449d44"><strong>SOLUCIÓN </strong><span class="glyphicon glyphicon-ok"></span></h4>
 					</div>
 					<div class="modal-body">
 						<div class="row">
@@ -262,13 +267,13 @@ for (i=1; i<= 5 ; i++) {		while ( i<= 5){
 							</div>
 							<div class="col-md-6">
 								<div>
-									<h3>Trazas encontradas</h3>
+									<h3>Trazas Encontradas</h3>
 									<table class=" table table-striped ">
 										<thead>
 											<tr>
 												<th>#</th>
 												<th>Traza</th>
-												<th>Calculo</th>
+												<th>Cálculo</th>
 												<th>Resultado</th>
 											</tr>
 										</thead>
@@ -315,6 +320,23 @@ for (i=1; i<= 5 ; i++) {		while ( i<= 5){
 	      </div>
 	    </div>
 	  </div>
+	  
+	  
+	  
+	  <div class="container">
+		<div>
+			<!--Titulo -->
+			<p>
+			<br>
+			<br>
+			<br>
+			<div class="jumbotron"
+				style="background: url('./img/footer.png') no-repeat center center; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; height: 150px;">
+			</div>
+		</div>
+	</div>
 </body>
+
+
 
 </html>
