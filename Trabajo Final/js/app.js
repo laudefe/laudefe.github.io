@@ -59,8 +59,12 @@ app.controller('controlador',function() {
 					var position = varIzq.indexOf(depen);
 					if (position != -1 && position >= i)
 						pos = 1;
-				} else
+				} else{
 					depen = dependencias[j];
+					var sentencia = varIzq.indexOf(depen);
+					if (sentencia >= i)
+						depen=" ";
+				}
 				var numeroSentencia = varIzq.indexOf(depen);
 				if (numeroSentencia != -1){
 					if ((numeroSentencia < i)||(numeroSentencia > i && pos == 0)){
