@@ -92,7 +92,7 @@ app.controller('controlador',function() {
 		for (var aux in estadosFinales){
 			if (estadosFinales[aux]){
 				idFinal=this.nodos.length;
-				this.nodos.push({id :idFinal,label : "Final", color : '#f1f1f1'});
+				this.nodos.push({id :idFinal,label : " ", color : '#f1f1f1'});
 				this.conectores.push({from : aux,to :idFinal,label : "("+ this.tiempoSentencia[aux]+ "," + "0)"});
 			}
 		}
@@ -183,7 +183,7 @@ app.controller('controlador',function() {
 	this.dfsBucle = function (grafo, index, traza, bucle, soluciones,anterior){
 		 grafo[index]["Unidos"] = true;
 		 grafo[index]["Visit"] = true;
-		 if (grafo[index]["Label"] == "Final")
+		 if (grafo[index]["Label"] == " ")
 		 { 
 			 var trazafinal = traza;
 			 
@@ -232,7 +232,7 @@ app.controller('controlador',function() {
 		grafo[index]["Unidos"] = true;
 		grafo[index]["Visit"] = true;
 		var yociclo= false;
-		if (grafo[index]["Label"] == "Final" )
+		if (grafo[index]["Label"] == " " )
 		{
 			if (ciclo != -1){
 				
