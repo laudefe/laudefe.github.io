@@ -239,7 +239,6 @@ app.controller('controlador',function() {
 		if (grafo[index]["Label"] == " " )
 		{
 			if (ciclo != -1){
-				
 				soluciones.push(this.armarTraza(traza,ciclo,costoCiclo));
 			}
 		}
@@ -267,12 +266,11 @@ app.controller('controlador',function() {
 					}
 					
 				}
-			}
-			if (yociclo)
-			{
+				if (yociclo)
+				{
 				traza.pop();
-			
 				yociclo = false;
+				}
 			}
 			if(index != anterior){
 			traza.pop();
@@ -324,7 +322,6 @@ app.controller('controlador',function() {
 				this.dfsCiclo(grafo, i, [], this.soluciones,[],-1,0,-1);
 			}
 		}
-		
 		this.grillaTrazas=[];
 		var text="";
 		for (var i in this.soluciones)
