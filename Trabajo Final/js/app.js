@@ -328,7 +328,7 @@ app.controller('controlador',function() {
 				text =text.replace(sentencia, this.tiempoSentencia[j]);
 			}
 			text =text.replace("N", numeroIteraciones);
-			this.grillaTrazas.push({traza:this.soluciones[i], calculo:text, resultado:eval(text)})
+			this.grillaTrazas.push({traza:this.soluciones[i], calculo:text, resultado:Number(eval(text).toFixed(2))});
 		}
 	}
 	
