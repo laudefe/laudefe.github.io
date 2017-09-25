@@ -235,7 +235,6 @@ app.controller('controlador',function() {
 	this.dfsCiclo = function (grafo, index, traza, soluciones,costo,ciclo,costoCiclo,anterior){
 		grafo[index]["Unidos"] = true;
 		grafo[index]["Visit"] = true;
-		var yociclo= false;
 		if (grafo[index]["Label"] == " " )
 		{
 			if (ciclo != -1){
@@ -263,13 +262,9 @@ app.controller('controlador',function() {
 							this.dfsCiclo(grafo,traza[primeroCiclo],traza,soluciones,costo,ciclo,costoCiclo,traza[primeroCiclo]);
 						}
 						ciclo=-1;
+						traza.pop();
 					}
 					
-				}
-				if (yociclo)
-				{
-				traza.pop();
-				yociclo = false;
 				}
 			}
 			if(index != anterior){
